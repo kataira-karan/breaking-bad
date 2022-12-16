@@ -1,0 +1,17 @@
+
+.home-container{
+
+    /* position: relative; */
+}
+
+.all-character-container{
+    width: 100vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax( 300px , 1fr)) ;
+    gap:10px;
+    background: url("../styles/polygon-scatter-haikei.svg");
+    place-items: center;
+}
+
+

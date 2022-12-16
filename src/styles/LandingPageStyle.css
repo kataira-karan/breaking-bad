@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap');
+
+.landingpage-container{
+    height: auto;
+    width:100vw;
+    position: reltive;
+}
+
+
+.landing-page-nav{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    z-index: 99;
+    font-family: 'Teko', sans-serif;
+    font-size: 2.6rem;
+
+}
+
+.nav-item{
+    padding:1rem 0;
+    transition: 0.5s all ease-in-out;
+    letter-spacing: 2px;
+    
+}
+
+
+.landingpage-image{
+    /* position: absolute; */
+    top:0;
+    height :auto;
+    width:100%;
+    filter: opacity(80%);
+}
+
+header{
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+}
+.breakingbad-special{
+    transition: 0.8 s all ease-in-out;
+}
+
+.index{
+    display: none;
+}
+
+.nav-item:nth-child(1){
+    animation: fadeIn 5s;
+}
+/* .nav-item{
+    animation: fadeIn 2s;
+} */
+
+
+@keyframes fadeIn
+ {
+            from{
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }
+        }
+
+.nav-item:hover{
+    cursor: pointer;
+}
+
+.nav-item:hover .breakingbad-special{
+    position: relative;
+    padding:1rem 1.2rem;
+    background-color: green;
+    transition: 0.5s all ease-in-out;
+    text-transform:uppercase;
+    font-weight: bold;
+    color:white;
+    border-radius: 3px;
+    border:2px solid white
+}
+
+.nav-item:hover .index{
+    font-size: 1rem;
+    display: inline-block;
+    position: absolute;
+    top:5px;
+    right: 5px;
+
+}
+
+.breakingbad-special-active{
+    position: relative;
+    padding:1rem 1.2rem;
+    background-color: green;
+    transition: 0.5s all ease-in-out;
+    font-weight: bold;
+    color:white;
+    border-radius: 3px;
+    border:2px solid white
+}
+
+.index-active{
+    font-size: 1rem;
+    display: inline-block;
+    position: absolute;
+    top:5px;
+    right: 5px;   
+}
+
+a{
+    text-decoration: none;
+    color:black;
+    margin:0.5rem 
+}   

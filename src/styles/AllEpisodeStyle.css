@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+}
+
+.all-episodes-container{
+    /* background-color: #94EC94; */
+    background: url("../styles/polygon-scatter-haikei.svg");
+    width: 100vw;
+    z-index: -1;
+    height: auto;
+    overflow-y: hidden;
+    padding: 0 5rem
+}
+
+.all-episodes{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax( 200px , 1fr)) ;
+    gap:20px
+
+}
+
+/* season filter start*/
+
+.season-filter{
+    padding:0.5rem 1.5rem;
+    border-radius:5px;
+    border:none;
+    margin:1rem;
+    color:black;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px grey;
+}
+
+/* season filter end*/
+
+
+/* episode card start */
+
+.episode-card{
+    /* height: 30vh;
+    width: 30vw; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* border:1px solid black; */
+    background-color: rgba(18, 17, 17);
+    color:white;
+    border-radius: 5px;
+    /* background-color: red; */
+    padding:2rem 2rem;
+    box-shadow: 2px 2px 2px grey;
+    
+}
+
+
+.card-section-title{
+    font-weight: bold;
+    font-size: 1rem;
+    padding-right:0.5rem
+    /* color: black; */
+}
+
+.card-section-value{
+    text-align: right;
+}
+
+hr{
+    background-color: white;
+    color:white;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+
+/* episode card end */
+.card-section{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin:0.3rem;
+}
+
+.spinner-container{
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

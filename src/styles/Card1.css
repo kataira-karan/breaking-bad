@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Charis+SIL&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus&display=swap');
+
+.card-container{
+    height:40vh;
+    width: 18vw;
+    /* border:1px solid black; */
+    background-color: aliceblue;
+    border-radius: 5px;     
+    cursor: pointer;
+    background-color: red;    
+    overflow: hidden;
+    position: relative  ;
+    margin: 1rem 0;
+    box-shadow: 2px 2px 2px grey    ;
+}
+
+img{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+    transition: 0.5s all ease-in-out;
+    border-radius: 5px;
+    
+}
+
+.card-container:hover img {
+    transform: scale(1.3) translateX(-20px);
+    transition: 0.5s all ease-in-out;
+    filter: blur(1px);
+}
+
+.card-content{
+    z-index: 99;
+    position: absolute;
+    top:0;
+    right: 0;
+    transform: translateY(-100%);
+    height: 100%;
+    width: 70%;
+    transition: 0.5s all ease-in-out;
+    display: flex;
+    flex-direction: column;
+    /* opacity: 0.5; */
+    /* justify-content: flex-start; */
+    /* padding-top:2rem; */
+    /* align-items: flex-start */
+    ;
+
+}
+
+
+.character-name{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    font-family: 'Gentium Plus', serif;
+    background-color: hsl(34, 78%, 91% , 0.5);
+    height: 30%;
+    width: 100%;
+    /* margin:1rem */
+    /* padding : 1rem 0; */
+}
+
+.card-container:hover .card-content{
+    /* background-color: rgb(244, 176, 176 , 0.5); */
+    /* background-color: #4BC562; */
+    background-color: rgba(75, 197, 98,0.5);
+    transition: 0.5s all ease-in-out;
+    transform: translateY(0);
+}
+
+.card-field{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+    padding:0 0.5rem;
+    /* border-bottom: 1px solid black; */
+}
+
+.card-label{
+    font-weight: bold;
+    font-size: 
+    0.9rem;
+}
+.card-name{
+    font-weight: bold;
+}
+
+hr{
+    background-color:black;
+    opacity: 0.3;
+}
